@@ -6,15 +6,20 @@
     <title>Pilates-Hofweier</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <nav>
             <ul class="menu-bar">
-                <li><a href="#home">Home:</a></li>
-                <li><a href="#about">Über mich:</a></li>
-                <li><a href="#classes">Kurse:</a></li>
-                <li><a href="#contact">Kontakt:</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#classes">Kurse</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </nav>
     </header>
@@ -22,13 +27,20 @@
     <main>
         <section id="home">
             <h1>Willkommen bei Pilates Hofweier: </h1>
+            <div class="txt-box">
+            <p class="pilates-description">Pilates ist ein ganzheitliches Trainingssystem, das Körper und Geist miteinander verbindet. <br>
+                 Es wurde von Joseph Pilates entwickelt und zielt darauf ab, die Muskulatur zu stärken, die Beweglichkeit zu verbessern und die Körperhaltung zu fördern. <br>
+                  Im Mittelpunkt stehen kontrollierte, fließende Bewegungen, die mit bewusster Atmung ausgeführt werden. Besonders trainiert wird die Körpermitte, auch „Core“ genannt, bestehend aus Bauch-, Rücken- und Beckenbodenmuskulatur. <br>
+                   Pilates eignet sich für Menschen jeden Alters und Fitnesslevels und wird sowohl zur Prävention als auch zur Rehabilitation eingesetzt. Es steigert das Körperbewusstsein und unterstützt eine gesunde, aufrechte Haltung im Alltag.</p>
+                </div>
+                   <div class="home-image"></div>
         </section>
 
         <section id="about">
             <h2>Über mich:</h2>
             <div class="about-me">
-                <img class="profile-img" src="" alt="profile-img">
-                <div>
+                <img class="profile-img" src="./assets/img/beispielProfilePic.png" alt="profile-img">
+                <div class="profile-txt">
                     <p>Ich bin Manuela, zertifizierte Pilates-Trainerin mit Leidenschaft für Bewegung und Gesundheit.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nostrum repudiandae qui distinctio <br> neque eligendi minima possimus provident accusamus quos modi voluptatibus error ut? Ullam reprehenderit sit maiores labore vitae!</p>
                 </div>
@@ -40,8 +52,8 @@
             <div class="class-location-container">
                 <p>Wo kannst du an meinen Kursen teilnehmen?</p>
                 
-                <div style="position:relative;">
-                    <iframe width="450" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=hofweier&t=m&z=11&ie=UTF8&iwloc=B&output=embed"></iframe>
+                <div class="maps-container">
+                    <iframe class="maps-window" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=hofweier&t=m&z=11&ie=UTF8&iwloc=B&output=embed"></iframe>
                     <a href="https://embed-maps.org" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">embed-maps.org</a>
                 </div>
             </div>
@@ -49,8 +61,9 @@
 
         <section id="contact">
             <h2>Kontakt:</h2>
-            <p>Wenn Sie Fragen haben oder einen Termin vereinbaren möchten, kontaktieren Sie mich bitte über das <a class="contact-link" href="./contact.html">Kontaktformular</a>.</p>
-            
+            <div class="txt-box">
+                <p>Wenn Sie Fragen haben oder einen Termin vereinbaren möchten, kontaktieren Sie mich bitte über das <br> <a class="contact-link" href="./contact.html">Kontaktformular</a>.</p>
+            </div>
         </section>
     </main>
 
