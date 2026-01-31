@@ -71,11 +71,6 @@ li a:hover {
 .home-image {
     padding-top: 70px;
     height: 500px;
-    width: 100%;
-    background-image: url("./assets/img/home-image.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .pilates-description {
