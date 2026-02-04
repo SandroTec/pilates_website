@@ -204,7 +204,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary)2;
+    background-color: var(--secondary);
     position: static;
     gap: 60px;
     bottom: 0;
