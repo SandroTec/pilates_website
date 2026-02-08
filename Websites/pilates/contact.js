@@ -1,7 +1,7 @@
 function sendMail(event) {
   event.preventDefault();
   //fetcht von formspree.io um mails zu senden
-  fetch("https://formspree.io/f/mlglqqon", {
+  fetch("https://formspree.io/f/xgolebvg", {
     method: "POST",
     body: new FormData(event.target),
     headers: {
