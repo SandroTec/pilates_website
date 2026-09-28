@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktformular- Pilates-Hofweier</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./contact-styles.css">
     <script defer src="./contact.js"></script>
 
+    <link rel="icon" href="./assets/img/logo_fitforfink.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -14,19 +16,17 @@
 </head>
 <body>
     <header>
-        <nav aria-label="Hauptnavigation">
-            <ul class="menu-bar">
-                <li><a href="./index.html#home">Home</a></li>
-                <li><a href="./index.html#about">Über mich</a></li>
-                <li><a href="./index.html#classes">Kurse</a></li>
-                <li><a href="./index.html#contact">Kontakt</a></li>
-            </ul>
+        <nav class="menu-bar">
+            <a href="./index.html#home"><img src="./assets/img/logo_fitforfink.png" alt="logo"></a>
+            <a href="./index.html#about">Über mich</a>
+            <a href="./index.html#classes">Kurse</a>
+            <a href="#contact">Kontakt</a>
         </nav>
     </header>
 
     <main>
-        <h1>Kontaktformular</h1>
         <form onsubmit="sendMail(event)">
+            <h1>Kontaktformular</h1>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -36,7 +36,52 @@
             <label for="message">Nachricht:</label>
             <textarea id="message" name="message" rows="4" required></textarea>
 
-            <button type="submit">Absenden</button>
+            <button class="sub-button" type="submit">Absenden</button>
+        </form>
+
+        
+        <form onsubmit="">
+            <h1>Probetrainig vereinbaren</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <div class="date-picker">
+                <label>Terminvereinbarung:</label>
+                <span>Immer 18-19Uhr</span>
+                <button class="date-input" id="dateInput" type="button">
+                    <span id="selectedDate">Datum auswählen</span>
+                    <span class="calendar-icon">📅</span>
+                </button>
+
+                <div class="calendar hidden" id="calendar">
+
+                    <div class="calendar-header">
+                        <button id="prevMonth" type="button">‹</button>
+
+                        <span id="monthYear"></span>
+
+                        <button id="nextMonth" type="button">›</button>
+                    </div>
+
+                    <div class="weekdays">
+                        <span>Mo</span>
+                        <span>Di</span>
+                        <span>Mi</span>
+                        <span>Do</span>
+                        <span>Fr</span>
+                        <span>Sa</span>
+                        <span>So</span>
+                    </div>
+
+                    <div class="calendar-days" id="calendarDays"></div>
+
+                </div>
+            </div>
+
+            <button class="sub-button" type="submit">Absenden</button>
         </form>
     </main>
 </body>
