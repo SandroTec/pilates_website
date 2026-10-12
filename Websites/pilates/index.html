@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <nav class="menu-bar">
+        <nav class="menu-bar max-content">
             <a href="#home"><img src="./assets/img/logo_fitforfink.png" alt="logo"></a>
             <a href="#about">Über mich</a>
             <a href="#classes">Kurse</a>
@@ -24,7 +24,7 @@
     </header>
 
     <main>
-        <section id="home">
+        <section class="max-content" id="home">
             <h1>
                 Willkommen bei Fit <span class="txt-accent">for</span> Fink: <br>
                 Pilates für Körper und Geist
@@ -38,30 +38,31 @@
                    <img src="./assets/img/logo_fitforfink.png" class="home-image">
         </section>
 
-        <section id="about">
+        <section class="max-content" id="about">
             <h2>Über mich:</h2>
             <div class="about-me">
                 <img class="profile-img" src="./assets/img/beispielProfilePic.png" alt="profile-img">
                 <div class="profile-txt">
-                    <p>Ich bin Manuela, zertifizierte Pilates-Trainerin mit Leidenschaft für Bewegung und Gesundheit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, nostrum repudiandae qui distinctio  neque eligendi minima possimus provident accusamus quos modi voluptatibus error ut? Ullam reprehenderit sit maiores labore vitae!</p>
+                    <p>
+                        Ich bin Manuela, zertifizierte Pilates- und Faszien-Trainerin mit Leidenschaft für Bewegung und Gesundheit.
+                        Lass uns gemeinsam deine Verwandlung starten, in ein gesünderes wohlfühlenes Leben.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="classes">
+        <section class="max-content" id="classes">
             <h2>Kurse:</h2>
             <div class="class-location-container">
                 <p>Wo kannst du an meinen Kursen teilnehmen?</p>
                 
                 <div class="maps-container">
-                    <iframe loading="lazy" class="maps-window" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=hofweier&t=m&z=11&ie=UTF8&iwloc=B&output=embed"></iframe>
-                    <a href="https://embed-maps.org" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">embed-maps.org</a>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2224.6561044139544!2d7.9756938881353685!3d48.46464762854197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796d49fa6a5b7e3%3A0xebf5f97c937e5fb0!2sFessenbacher%20Str.%20115%2C%2077654%20Offenburg-Fessenbach!5e0!3m2!1sde!2sde!4v1791839405189!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>                    <a href="https://embed-maps.org" style="font-size:2px!important;color:gray!important;position:absolute;bottom:0;left:0;z-index:1;max-height:1px;overflow:hidden">embed-maps.org</a>
                 </div>
             </div>
         </section>
 
-        <section id="contact">
+        <section class="max-content" id="contact">
             <h2>Kontakt:</h2>
             <div class="txt-box">
                 <p>Wenn Sie Fragen haben oder einen Termin vereinbaren möchten, kontaktieren Sie mich bitte über das <br> <a target="_blank" class="contact-link" href="./contact.html">Kontaktformular</a>.</p>
@@ -70,8 +71,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Pilates Hofweier. Alle Rechte vorbehalten.</p>   
-        <a target="_blank" href="./impressum.html">Impressum</a>
+        <div class="max-content footer-container">
+            <p>&copy; 2026 Pilates Hofweier. Alle Rechte vorbehalten.</p>   
+            <a target="_blank" href="./impressum.html">Impressum</a>
+        </div>
     </footer>
 </body>
 </html>

@@ -55,7 +55,7 @@ const maxDate = new Date(today);
 
 maxDate.setMonth(maxDate.getMonth() + 3);
 
-const allowedDays = [3, 5];
+const allowedDays = [1, 4];
 
 function renderCalendar() {
     calendarDays.innerHTML = '';
