@@ -25,7 +25,7 @@
     </header>
 
     <main>
-        <form onsubmit="sendMail(event)">
+        <form class="contact-form" onsubmit="sendMail(event)" >
             <h1>Kontaktformular</h1>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -40,7 +40,7 @@
         </form>
 
         
-        <form onsubmit="">
+        <form onsubmit="" class="training-form d-none">
             <h1>Probetrainig vereinbaren</h1>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -84,5 +84,8 @@
             <button class="sub-button" type="submit">Absenden</button>
         </form>
     </main>
+    <div class="btn-container">
+        <button onclick="toggleForms()" id="toggleFormsBtn"><a>Probetraining vereinbaren?</a></button>
+    </div>
 </body>
 </html>

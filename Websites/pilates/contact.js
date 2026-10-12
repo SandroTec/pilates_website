@@ -29,6 +29,19 @@ const monthYear = document.getElementById('monthYear');
 const prevMonthBtn = document.getElementById('prevMonth');
 const nextMonthBtn = document.getElementById('nextMonth');
 
+const toggleFormsBtn = document.getElementById('toggleFormsBtn');
+const trainingForm = document.querySelector('.training-form');
+const contactForm = document.querySelector('.contact-form');
+
+function toggleForms() {
+    if (trainingForm.classList.contains('d-none')) {
+        trainingForm.classList.remove('d-none');
+        contactForm.classList.add('d-none');
+    } else {
+        trainingForm.classList.add('d-none');
+        contactForm.classList.remove('d-none');
+    }
+}
 
 const today = new Date();
 

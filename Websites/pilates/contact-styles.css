@@ -9,6 +9,7 @@ form {
     background: #f2f2f25d;
     box-sizing: border-box;
     padding: 40px;
+    width: 50%;
 }
 
 label {
@@ -205,6 +206,25 @@ textarea:focus {
 
 .empty-day {
     aspect-ratio: 1;
+}
+
+.d-none {
+    display: none;
+}
+
+.btn-container {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.btn-container button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-container button:hover {
+    color:  #e6145f;
 }
 
 @media (max-width: 760px) {
