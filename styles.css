@@ -157,6 +157,14 @@ p {
     max-width: 500px;
 }
 
+.kurs-txt {
+    background-color: var(--secondary);
+    height: auto;
+    padding: 18px;
+    border-radius: 16px;
+    max-width: 500px
+}
+
 .txt-box {
     max-width: 800px;
     background-color: var(--secondary);
@@ -172,6 +180,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .class-location-container {
